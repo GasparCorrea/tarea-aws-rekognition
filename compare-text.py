@@ -1,5 +1,6 @@
 import boto3
 from datetime import datetime
+import sys
 
 def detect_text(photo, bucket, min_confidence):
     logs = list()
@@ -56,16 +57,11 @@ def compare_result(result,expected):
         print(tmp_log)
     return [tmp_log]
 
-def main():
-
+def main(bucket,photo_control,photo_test,expected,min_confidence=90):
     # Initial params
     logs = []
-    bucket='tareaps'
-    photo_control='meme-A.jpg'
-    photo_test='meme-B.jpg'
     min_confidence=90
-    expected=True
-    
+    log_name = "log-"+str(datetime.now()).replace(":","")+".txt"
     # Initial Logging
     now = str(datetime.now())
     tmp_log = now+" - Bucket: "+bucket
@@ -100,6 +96,14 @@ def main():
     logs+=tmp_log
 
     tmp_log=compare_result(result,expected)
+    logs+=tmp_log
+
+    with open(log_name,'w') as f:
+        for log in logs:
+            f.write(log+"\n")
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 6:
+        raise SyntaxError("Incorrect number of arguments.")
+    else:
+        main(sys.argv[1], sys.argv[2], sys.argv[3],eval(sys.argv[4]),float(sys.argv[5]))

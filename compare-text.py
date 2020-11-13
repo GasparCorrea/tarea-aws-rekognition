@@ -38,7 +38,10 @@ def detect_text(photo, bucket, min_confidence):
                 logs.append(tmp_log)
     return phrase,logs
 
-def compare_phrases(phrase_control,phrase_test,strict=True):
+def compare_phrases(phrase_control,phrase_test,strict=False):
+    if(not strict):
+        phrase_control = [x.lower() for x in phrase_control]
+        phrase_test = [x.lower() for x in phrase_test]
     result = phrase_control == phrase_test
     now = str(datetime.now())
     tmp_log = now + " - Comparing phrases - "+ str(result)
@@ -60,7 +63,6 @@ def compare_result(result,expected):
 def main(bucket,photo_control,photo_test,expected,min_confidence=90):
     # Initial params
     logs = []
-    min_confidence=90
     log_name = "log-"+str(datetime.now()).replace(":","")+".txt"
     # Initial Logging
     now = str(datetime.now())

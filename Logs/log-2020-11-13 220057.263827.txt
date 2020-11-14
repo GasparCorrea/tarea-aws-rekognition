@@ -1,0 +1,15 @@
+2020-11-13 22:00:57.263847 - Bucket: pds-aws-rekognition
+2020-11-13 22:00:57.263921 - Photo control: control-image.jpg
+2020-11-13 22:00:57.263945 - Photo test: test11-image.jpg
+2020-11-13 22:00:57.263959 - Minimal confidence: 90.0
+2020-11-13 22:00:57.263983 - Detecting text in control-image.jpg
+2020-11-13 22:01:00.050044 - 'IT'S' detected with 99.196% of confidence - Acceptable
+2020-11-13 22:01:00.050103 - 'MONDAY' detected with 99.977% of confidence - Acceptable
+2020-11-13 22:01:00.050119 - 'but' detected with 99.854% of confidence - Acceptable
+2020-11-13 22:01:00.050133 - 'keep' detected with 99.886% of confidence - Acceptable
+2020-11-13 22:01:00.050146 - 'Smiling' detected with 99.907% of confidence - Acceptable
+2020-11-13 22:01:00.051309 - Detecting text in test11-image.jpg
+2020-11-13 22:01:01.623471 - 'KEEP' detected with 99.903% of confidence - Acceptable
+2020-11-13 22:01:01.623526 - 'SMILING' detected with 99.974% of confidence - Acceptable
+2020-11-13 22:01:01.624885 - Comparing phrases - False
+2020-11-13 22:01:01.624952 - got False, expected False - Test Passed

@@ -1,0 +1,12 @@
+2020-11-13 21:59:37.911239 - Bucket: pds-aws-rekognition
+2020-11-13 21:59:37.911274 - Photo control: control3-image.jpg
+2020-11-13 21:59:37.911283 - Photo test: test8-image.jpg
+2020-11-13 21:59:37.911290 - Minimal confidence: 90.0
+2020-11-13 21:59:37.911302 - Detecting text in control3-image.jpg
+2020-11-13 21:59:40.144987 - 'TTTTTTTTTTTTTTTTITHHH' detected with 81.181% of confidence - Unacceptable
+2020-11-13 21:59:40.145203 - 'FFFFFFFFF0OOOOOOOOORRRRRRRRRREEEEEEEEEESSSSSTTTTT' detected with 91.130% of confidence - Acceptable
+2020-11-13 21:59:40.146569 - Detecting text in test8-image.jpg
+2020-11-13 21:59:42.146215 - 'TITITTITTIIITITTHHHHHHHHHHHHHHHHHHHHEEEEEEEEEE' detected with 90.863% of confidence - Acceptable
+2020-11-13 21:59:42.146261 - 'FFFFFFFFFOOOOOOOOOORRRRRRRRRREEEEEEEEEESSSSSTTTIT' detected with 93.308% of confidence - Acceptable
+2020-11-13 21:59:42.147450 - Comparing phrases - False
+2020-11-13 21:59:42.147485 - got False, expected True - Test Failed

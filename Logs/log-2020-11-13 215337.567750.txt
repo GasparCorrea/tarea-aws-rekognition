@@ -1,0 +1,24 @@
+2020-11-13 21:53:37.567772 - Bucket: pds-aws-rekognition
+2020-11-13 21:53:37.567861 - Photo control: control-image.jpg
+2020-11-13 21:53:37.567882 - Photo test: test4-image.jpg
+2020-11-13 21:53:37.567896 - Minimal confidence: 90.0
+2020-11-13 21:53:37.567921 - Detecting text in control-image.jpg
+2020-11-13 21:53:39.487396 - 'IT'S' detected with 99.196% of confidence - Acceptable
+2020-11-13 21:53:39.487482 - 'MONDAY' detected with 99.977% of confidence - Acceptable
+2020-11-13 21:53:39.487504 - 'but' detected with 99.854% of confidence - Acceptable
+2020-11-13 21:53:39.487520 - 'keep' detected with 99.886% of confidence - Acceptable
+2020-11-13 21:53:39.487537 - 'Smiling' detected with 99.907% of confidence - Acceptable
+2020-11-13 21:53:39.489052 - Detecting text in test4-image.jpg
+2020-11-13 21:53:42.220356 - '123RF' detected with 97.550% of confidence - Acceptable
+2020-11-13 21:53:42.220430 - 'Smiling' detected with 99.922% of confidence - Acceptable
+2020-11-13 21:53:42.220460 - '123RC' detected with 84.394% of confidence - Unacceptable
+2020-11-13 21:53:42.220479 - '(1123RF' detected with 81.732% of confidence - Unacceptable
+2020-11-13 21:53:42.220496 - 'Keep' detected with 99.873% of confidence - Acceptable
+2020-11-13 21:53:42.220513 - 'But' detected with 99.834% of confidence - Acceptable
+2020-11-13 21:53:42.220530 - '123RF' detected with 87.719% of confidence - Unacceptable
+2020-11-13 21:53:42.220546 - 'Monday' detected with 99.969% of confidence - Acceptable
+2020-11-13 21:53:42.220563 - '123RF' detected with 90.902% of confidence - Unacceptable
+2020-11-13 21:53:42.220580 - 'It's' detected with 99.540% of confidence - Acceptable
+2020-11-13 21:53:42.220597 - '123RF' detected with 91.880% of confidence - Unacceptable
+2020-11-13 21:53:42.221914 - Comparing phrases - False
+2020-11-13 21:53:42.221999 - got False, expected True - Test Failed
